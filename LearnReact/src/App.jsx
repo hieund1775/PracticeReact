@@ -4,10 +4,17 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
+//() => {}
+//component = html + css + js
+const MyComponent = () => {
+  return (
+    <div> eric & me</div> //tag
+  );
+};
+
 const App = () => {
   const [count, setCount] = useState(0);
 
-  const myFunction = () => {};
   return (
     <>
       <section id="center">
@@ -18,6 +25,7 @@ const App = () => {
         </div>
         <div>
           <h1>Get started</h1>
+          <MyComponent />
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>

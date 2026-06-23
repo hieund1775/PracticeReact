@@ -1,11 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "./App.css";
+import MyComponent from "./components/learn/MyComponent";
+import {
+  SecondComponent,
+  ThirdComponent,
+} from "./components/learn/SecondComponent";
+const App = () => {
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -17,6 +21,9 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <MyComponent />
+          <SecondComponent />
+          <ThirdComponent />
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -116,7 +123,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
